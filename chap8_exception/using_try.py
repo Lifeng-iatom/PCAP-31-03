@@ -5,6 +5,6 @@ from cli.error import ArgumentsError
 
 try:
       main()
-except ArgumentsError as err:
+except (ArgumentsError,AssertionError) as err:
       print(f"error:{err}")
       sys.exit(1)
