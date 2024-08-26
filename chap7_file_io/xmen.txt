@@ -1,5 +1,5 @@
-beast
-phoenix
+Morph
+Morph1x
 cyclops
 Bishop
 Night Crawler
