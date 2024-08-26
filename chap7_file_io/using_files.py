@@ -13,3 +13,13 @@ with open("xmen.txt",'w+') as my_file:
       my_file.seek(0)
       for line in my_file.readlines():
             print(line)
+
+with open('xmen.txt','rb') as f:
+      print(f.read())
+
+with open('xmen.txt','rb') as f:
+      b_array = bytearray(10)
+      f.readinto(b_array)
+      print(b_array)
+      new_b_array = bytearray(f.read(5))
+      print(new_b_array)
