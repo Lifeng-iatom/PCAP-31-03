@@ -1,0 +1,21 @@
+{
+  "manifest_version": 3,
+  "name": "enac Auto by Liangwen SONG",
+  "version": "1.0",
+  "permissions": [
+    "tabs",
+    "scripting",      // 必须声明 scripting 权限
+    "alarms",         // 定时任务权限
+    "activeTab"
+  ],
+  "host_permissions": [
+    "https://portail.enac.fr/*"  // 需要访问目标网站
+  ],
+  "background": {
+    "service_worker": "background.js"   // 使用 Service Worker 作为后台脚本
+  },
+  "action": {
+    "default_popup": "popup.html"
+  }
+}
+
